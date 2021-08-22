@@ -5,27 +5,25 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="dist/tailwind.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <div class="min-h-screen bg-purple-400 flex justify-center items-center">
-            <div class="absolute w-60 h-60 rounded-xl bg-purple-300 -top-5 -left-16 z-0 transform rotate-45 hidden md:block"></div>
-            <div class="absolute w-48 h-48 rounded-xl bg-purple-300 -bottom-6 -right-10 transform rotate-12 hidden md:block"></div>
-            <div class="py-12 px-12 bg-white rounded-2xl shadow-xl z-20">
-              <div>
-                <h1 class="text-3xl font-bold text-center mb-4 cursor-pointer">Create An Account</h1>
-                <p class="w-80 text-center text-sm mb-8 font-semibold text-gray-700 tracking-wide cursor-pointer">Create an account to enjoy all the services without any ads for free!</p>
-              </div>
-              <div class="space-y-4">
-                <input type="email" placeholder="Email Addres" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none" />
-                <input type="password" placeholder="Password" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none" />
-              </div>
-              <div class="text-center mt-6">
-                <button class="py-3 w-64 text-xl text-white bg-purple-400 rounded-2xl">Create Account</button>
-                <p class="mt-4 text-sm">Already Have An Account? <span class="underline cursor-pointer"> Sign In</span></p>
-              </div>
+      <div id="luar" class="flex justify-center items-center bg-gradient-to-b from-pink-500 to-blue-500 min-h-screen">
+        <div id="dalam" class="flex bg-white container rounded-2xl overflow-hidden mx-3">
+          <div id="kiri" class="hidden sm:block sm:w-1/2 bg-cover bg-center " style="background-image:url(https://images.unsplash.com/photo-1627079224770-eaa511c81367?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)"></div>
+          <div id="kanan" class="w-full sm:w-1/2 p-11 flex flex-col gap-7">
+            <h1 class="text-3xl font-semibold">Sign in</h1>
+            <form action="#" class="flex flex-col gap-3">
+              <input type="email" placeholder="Email" class="border-b-2 border-green-300 p-2" />
+              <input type="password" placeholder="Password" class="border-b-2 border-green-300 p-2" />
+              <input type="button" value="Continue" class="p-2 bg-gradient-to-l text-white font-medium rounded-md" />
+            </form>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="bg-blue-800 hover:bg-blue-900 text-center text-white rounded-md p-2"><i class="fab fa-facebook-f mx-2"></i> Sign in with Facebook</a>
+              <a href="#" class="bg-blue-400 hover:bg-blue-500 text-center text-white rounded-md p-2"><i class="fab fa-twitter mx-2"></i> Sign in with Twitter</a>
             </div>
-            <div class="w-40 h-40 absolute bg-purple-300 rounded-full top-0 right-12 hidden md:block"></div>
-            <div class="w-20 h-40 absolute bg-purple-300 rounded-full bottom-20 left-10 transform rotate-45 hidden md:block"></div>
           </div>
+        </div>
+      </div> 
     </body>
 </html>
